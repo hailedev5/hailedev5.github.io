@@ -9,7 +9,10 @@ body { font-size: 1rem;background-color:#002c45;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0px 0px 12px cyan inset;
     height:100%;
-    width:100%
+    width:100%;
+    -webkit-user-select:none;
+      ms-user-select:none;
+      user-select:none
  }
 
 /* Tablet and larger */
@@ -18,7 +21,10 @@ body { font-size: 1rem;background-color:#002c45;
     color:black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       height:100%;
-      width:100%
+      width:100%;
+        -webkit-user-select:none;
+      ms-user-select:none;
+      user-select:none
  }
 }
          .logo-area { display: flex; align-items: center; gap: 5px; font-size: 1.2rem; font-weight: 800;color:transparent;background:linear-gradient(50deg,purple,blue,yellow);margin-top:-40px;margin-left:50px;-webkit-background-clip:text;}
