@@ -5,6 +5,9 @@
 }
 /* Mobile base styles (default) */
 body { font-size: 1rem;background-color:#002c45;
+      -webkit-user-select:none;
+      ms-user-select:none;
+      user-select:none;
     color:black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0px 0px 12px cyan inset;
