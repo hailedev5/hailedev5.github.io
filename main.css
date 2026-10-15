@@ -7,7 +7,10 @@
 body { font-size: 1rem;background-color:#225066;
     color:black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image:url(Gemini.png);
+    -webkit-user-select:none;
+    -ms-user-select:none;
+     moz-user-select:none;
+     user-select:none;
     box-shadow: 2px 2px 12px #6bc1db;
     background:linear-gradient(yellow,purple);
     height:100%;
