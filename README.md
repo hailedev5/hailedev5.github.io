@@ -42,6 +42,7 @@ To get a local copy up and running, follow these simple steps:
    ```bash
    git clone [https://github.com/hailedev5/hailedev5.github.io.git](https://github.com/hailedev5/hailedev5.github.io.git
 ```
-___
+<div>
 
-  [Go to website](hailedev5.github.io)
+  **[Go to website]** (hailedev5.github.io)
+</div>
