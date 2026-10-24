@@ -67,7 +67,7 @@ ul {
     margin: 10px;
     border-radius: 15px;
     font-family: monospace;
-    animation:moveRight 6s ease-out infinite;
+    animation:moveRight1 6s ease-out infinite;
     box-shadow: 2px 2px 12px #6bc1db;
    
 }
@@ -76,6 +76,17 @@ ul {
     overflow: hidden;
 }
 @keyframes moveRight{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(calc(100vw-100%));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes moveRight1{
     0%{
         transform: translateX(0);
     }
