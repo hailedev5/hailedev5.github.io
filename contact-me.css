@@ -94,15 +94,15 @@ footer{
 }
 @keyframes moveRight2{
     0%{
-        transform: translateX(-43%);
+        transform: translateX(20px);
         color:yellow
     }
     50%{
-       transform: translateX(43%);
+       transform: translateX(20px);
        color:gold        
     }
     100%{
-        transform: translateX(-43%);
+        transform: translateX(20px);
     }
 } 
  .flex-container {
