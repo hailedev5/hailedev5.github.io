@@ -77,13 +77,13 @@ ul {
 }
 @keyframes moveRight{
     0%{
-        transform: translateX(150px);
+        transform: translateX(50%);
     }
     50%{
-        transform: translateX(150px);
+        transform: translateX(-50%);
     }
     100%{
-        transform: translateX(-300px);
+        transform: translateX(50%);
     }
 }
 
