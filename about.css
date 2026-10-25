@@ -41,7 +41,6 @@ body { font-size: 1rem;background-color:#002c45;
  .logo-area { display: flex; align-items: center; gap: 5px; font-size: 1.2rem; font-weight: 800;color:transparent;background:linear-gradient(50deg,purple,blue,yellow);margin-top:-40px;margin-left:50px;-webkit-background-clip:text;}
 .verified-badge { width: 18px; height: 18px; fill: #1DA1F2}
 .activities{
-    display: block;
     width:170px;
     height:100%;
     padding: 15px;
@@ -50,15 +49,16 @@ body { font-size: 1rem;background-color:#002c45;
     margin: 10px;
     border-radius: 15px;
     font-family: monospace;
-    animation:moveRight 3s ease-out infinite;
     box-shadow: 2px 2px 12px #6bc1db;
+    display:flex;
+   justify-content:center;
+   align-items:center
 }
 ul {
     list-style: none;
     overflow: hidden;
 }
 .projects{
-    display: block;
     width:170px;
     height:100%;
     padding: 15px;
@@ -67,37 +67,15 @@ ul {
     margin: 10px;
     border-radius: 15px;
     font-family: monospace;
-    animation:moveRight1 6s ease-out infinite;
     box-shadow: 2px 2px 12px #6bc1db;
-   
+   display:flex;
+   justify-content:center;
+   align-items:center
 }
 ul {
     list-style: none;
     overflow: hidden;
 }
-@keyframes moveRight{
-    0%{
-        transform: translateX(0);
-    }
-    50%{
-        transform: translateX(300);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-@keyframes moveRight1{
-    0%{
-        transform: translateX(0);
-    }
-    50%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
 nav {
     height: 80px;
     background-color:#ebd09b;
