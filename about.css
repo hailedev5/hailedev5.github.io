@@ -50,7 +50,7 @@ body { font-size: 1rem;background-color:#002c45;
     border-radius: 15px;
     font-family: monospace;
     box-shadow: 2px 2px 12px #6bc1db;
-    display:flex;
+    display: block;
    justify-content:center;
    align-items:center
 }
@@ -68,7 +68,7 @@ ul {
     border-radius: 15px;
     font-family: monospace;
     box-shadow: 2px 2px 12px #6bc1db;
-   display:flex;
+   display:block;
    justify-content:center;
    align-items:center
 }
