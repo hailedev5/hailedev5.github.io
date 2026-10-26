@@ -128,7 +128,8 @@ h5{
     text-align:center;
     font-size:1.3rem;
     text-shadow:3px 3px 13px gold;
-    animation:rotate 3s ease-in infinite
+    animation:rotate 3s ease-in infinite;
+width:50%
 }
 @keyframes rotate{
     0%{
