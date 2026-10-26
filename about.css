@@ -74,7 +74,7 @@ ul {
 transform: translateX(0)
 }
 50%{
-transform: translateX(100vvw)
+transform: translateX(100vw)
 }
 100%{
 transform: translateX(0)
