@@ -50,7 +50,20 @@ body { font-size: 1rem;background-color:#002c45;
     margin: 10px;
     border-radius: 15px;
     font-family: monospace;
-    box-shadow: 2px 2px 12px #6bc1db
+    box-shadow: 2px 2px 12px #6bc1db;
+    animation: moveright1 9s linear infinite
+}
+@keyframes moveright1{
+0%{
+transform: translateX(0)
+}
+50%{
+transform: translateX(100vw)
+}
+100%{
+transform: translateX(0)
+}
+}
 }
 ul {
     list-style: none;
@@ -67,7 +80,7 @@ ul {
     border-radius: 15px;
     font-family: monospace;
     box-shadow: 2px 2px 12px #6bc1db;
-    animation: moveright 5s linear infinite
+    animation: moveright 7s linear infinite
 }
 @keyframes moveright{
 0%{
