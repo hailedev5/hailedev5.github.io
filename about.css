@@ -136,3 +136,81 @@ width:50%
         transform:skewX(23deg)
     }
 }
+	.explore{
+				text-align:center;
+				font-size:1.7em;
+				font-family:system-ui;
+				color:transparent;
+				background:conic-gradient(orange,purple,seagreen);
+				-webkit-background-clip:text
+		}
+		.amharic{
+				font-size:1.7em;
+				font-family:system-ui;
+				color:transparent;
+				background:conic-gradient(blue,cyan,seagreen);
+				-webkit-background-clip:text
+		}
+		.amharic-div{
+				  overflow:hidden;
+				  position:relative;
+				  border-radius:10px;
+				  padding:4px;
+				  display:flex;
+				  justify-content:center;
+				  align-items:center;
+		}
+		.amharic-inner{
+				z-index:2;
+				background-color:rgb(0,42,77);
+				height:100%;
+				width:100%;
+				padding:4px;
+				border-radius:10px
+		}
+		.amharic-div::before{
+				content:"";
+				position:absolute;
+				z-index:-1;
+				height:150%;
+				width:150%;
+				background:conic-gradient(blue,cyan,red,orange,yellow,seagreen);
+				animation:rotate 5s ease-out infinite;
+		}
+		@keyframes rotate{
+				0%{
+						transform: rotate(0deg)
+				}
+				100%{
+						transform: rotate(360deg)
+				}
+		}
+		.amharic-img{
+				height:160px;
+				width:300px;
+				margin-left:-3px;
+				border:1px solid cyan;
+				border-radius:5px;
+				width:100%;
+				height:70%;
+				max-height:80%
+		}
+		.amharic-desc{
+				color:white;
+			font-weight:bold	;
+				margin-left:0px;
+				margin-right:40px;
+				font-family:system-UI
+		}
+		.github{
+				height:40px;
+				width:40px;
+				margin-left:10%;
+				margin-bottom:-10px
+		}
+		.web{
+				text-decoration:none;
+				font-size:1.7rem;
+				margin-left:50px;
+				margin-bottom:50px
+		}
