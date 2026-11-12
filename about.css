@@ -148,7 +148,7 @@ width:50%
 				font-size:1.7em;
 				font-family:system-ui;
 				color:transparent;
-				background:conic-gradient(blue,cyan,seagreen);
+				background:linear-gradient(90deg,violet,yellow);
 				-webkit-background-clip:text
 		}
 		.amharic-div{
@@ -164,7 +164,7 @@ width:50%
 				z-index:2;
 				background-color:rgb(0,42,77);
 				height:100%;
-				width:100%;
+				width:98%;
 				padding:4px;
 				border-radius:10px
 		}
@@ -196,21 +196,21 @@ width:50%
 				max-height:80%
 		}
 		.amharic-desc{
-				color:white;
-			font-weight:bold	;
-				margin-left:0px;
+				color:cyan;
+				margin-left:40px;
+				font-weight:bold;
 				margin-right:40px;
-				font-family:system-UI
+				font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 		}
 		.github{
 				height:40px;
 				width:40px;
-				margin-left:10%;
-				margin-bottom:-10px
+				margin-bottom:-13px;
+				padding-bottom:5px
 		}
 		.web{
 				text-decoration:none;
-				font-size:1.7rem;
-				margin-left:50px;
-				margin-bottom:50px
+				font-size:2rem;
+				margin-bottom:-5px;
+				padding-right:70px
 		}
