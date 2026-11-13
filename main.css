@@ -4,22 +4,21 @@
     padding: 0px;
 }
 /* Mobile base styles (default) */
-body { font-size: 1rem;background-color:#225066;
+body { font-size: 1rem;background-color:#002c45;
     color:black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-user-select:none;
     -ms-user-select:none;
-     moz-user-select:none;
+     -moz-user-select:none;
      user-select:none;
-    box-shadow: 2px 2px 12px #6bc1db;
-    background:linear-gradient(yellow,purple);
+    box-shadow: inset 0px 0px 24px cyan;
     height:100%;
     width:100%
  }
 
 /* Tablet and larger */
 @media (min-width: 768px) {
-  body { font-size: 1.125rem;background-color:#225066;
+  body { font-size: 1.125rem;background-color:#002c45;
     color:black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       height:100%;
@@ -28,16 +27,29 @@ body { font-size: 1rem;background-color:#225066;
 }
 nav {
     height:80px;
-    background-color:#ebd09b;
     box-shadow: 2px 2px 12px #6bc1db;
     align-items: center;
     top: 0;
     width: 100%;
     z-index: 100;
-    position: sticky;
-    border-radius:16px
+    position: sticky
 }
-     .logo-area { display: flex; align-items: center; gap: 5px; font-size: 1.2rem; font-weight: 800;color:transparent;background:linear-gradient(50deg,purple,blue,yellow);margin-top:-40px;margin-left:50px;-webkit-background-clip:text;}
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Hidden off-screen */
+  width: 250px;
+  height: 100%;
+  background-color:rgba(0,0,0,0.5);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu.active {
+  transform: translateX(-100%);
+}
+     .logo-area { display: flex; align-items: center; gap: 5px; font-size: 1.2rem; font-weight: bold;color:transparent;background:linear-gradient(50deg,purple,blue,yellow);-webkit-background-clip:text;margin-top:-30px;margin-left:60px}
         .verified-badge { width: 18px; height: 18px; fill: #1DA1F2}
 
 h{
@@ -46,7 +58,14 @@ h{
     background-clip: text;
     color:transparent
 }
-
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
 .about-container {
     width: 70%;
     height: auto;
@@ -187,7 +206,8 @@ footer{
 }
 .type-text{
      font-size: 2rem;
-    color:gold;
+    color:transparent;
+    background:conic-gradient(purple,yellow);
       font-weight: bold;
       white-space: nowrap;
       overflow: hidden;
@@ -199,6 +219,7 @@ footer{
         blink 0.75s infinite;
         animation-delay: 6s;
         text-shadow:2px 2px 12px gold;
+    -webkit-background-clip:text
 }
 @keyframes typing2 {
       from { width: 0; }
