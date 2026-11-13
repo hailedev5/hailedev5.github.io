@@ -38,7 +38,33 @@ body { font-size: 1rem;background-color:#002c45;
     align-items: center;
     padding: 20px;
 } 
- .logo-area { display: flex; align-items: center; gap: 5px; font-size: 1.2rem; font-weight: 800;color:transparent;background:linear-gradient(50deg,purple,blue,yellow);margin-top:-40px;margin-left:50px;-webkit-background-clip:text;}
+nav {
+    height:80px;
+    box-shadow: 2px 2px 12px #6bc1db;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    position: sticky
+}
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Hidden off-screen */
+  width: 250px;
+  height: 100%;
+  background-color:rgba(0,0,0,0.5);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    z-index: 1000
+}
+.nav-menu.active {
+  transform: translateX(-100%);
+}
+     .logo-area { display: flex; align-items: center; gap: 5px; font-size: 1.2rem; font-weight: bold;color:transparent;background:linear-gradient(50deg,purple,blue,yellow);-webkit-background-clip:text;margin-top:-30px;margin-left:60px}
+
 .verified-badge { width: 18px; height: 18px; fill: #1DA1F2}
 .activities{
     display:block;
@@ -96,17 +122,6 @@ transform: translateX(0)
 ul {
     list-style: none;
     overflow: hidden;
-}
-nav {
-    height: 80px;
-    background-color:#ebd09b;
-    box-shadow: 2px 2px 12px #6bc1db;
-    align-items: center;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    position: sticky;
-    border-radius: 16px;
 }
 .flex-container {
   display: flex;
