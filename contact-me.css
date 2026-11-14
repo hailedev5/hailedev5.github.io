@@ -51,7 +51,7 @@ nav {
 .nav-menu {
   position: fixed;
   top: 0;
-    right:-100%;
+    left:100%;
   width: 250px;
   height: 100%;
   background-color:rgba(0,0,0,0.5);
