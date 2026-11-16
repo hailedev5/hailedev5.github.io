@@ -45,6 +45,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+overflow:scroll;
     z-index:1000
 }
 .nav-menu.active {
