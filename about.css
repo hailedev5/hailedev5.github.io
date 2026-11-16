@@ -27,9 +27,8 @@ body { font-size: 1rem;background-color:#002c45;
 .about-container {
     width:70%;
     height:100%;
-    background-color: #002c45;
+    background-color:rgba(0,0,0,0.2);
     border-radius: 20px;
-    box-shadow: 2px 2px 12px #6bc1db;
     display: flex;
     margin: -7% auto 20px auto;
     margin-top: 100px;
@@ -37,8 +36,9 @@ body { font-size: 1rem;background-color:#002c45;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
-    color:cyan
-} 
+    color:cyan;
+    box-shadow: 2px 2px 12px #6bc1db;
+}
 nav {
     height:80px;
     box-shadow: 2px 2px 12px #6bc1db;
@@ -138,18 +138,25 @@ ul {
     height:100%
 }
 h5{
-    background-color:#f58764;
-    color:yellow;
+    color:transparent;
+    font-weight: bold;
+    background:conic-gradient(cyan,blue);
+    -webkit-background-clip:text;
     border-radius:5px;
     text-align:center;
     font-size:1.3rem;
-    text-shadow:3px 3px 13px gold;
     animation:skew 3s ease-in infinite;
 width:50%
 }
 @keyframes skew{
     0%{
-        transform:skewX(23deg)
+        transform:translateX(23px)
+    }
+    50%{
+        transform: translateX(-23px)
+    }
+    100%{
+        transform: translateX(23px)
     }
 }
 	.explore{
@@ -230,3 +237,26 @@ width:50%
 				margin-bottom:-5px;
 				padding-right:70px
 		}
+.code{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border:1px solid cyan;
+    cursor:pointer;
+    width:50%;
+    transition: box-shadow 0.2s ease, transform 0.2s ease
+}
+.code-main{
+    display: flex;
+    align-items:center;
+    justify-content: center
+}
+.code:active{
+    box-shadow:0px 0px 7px , 0px 0px 7px cyan;
+    transform: scale(0.98)
+}
+.code-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr);
+    gap:16px
+}
