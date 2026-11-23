@@ -243,8 +243,9 @@ width:50%
     justify-content: center;
     border:1px solid cyan;
     cursor:pointer;
-    width:50%;
-    transition: box-shadow 0.2s ease, transform 0.2s ease
+    -webkit-tap-highlight-color:rgba(23,21,75,0.3);
+    width:180%;
+    transition: box-shadow 0.5s ease, transform 0.5s ease
 }
 .code-main{
     display: flex;
@@ -253,10 +254,10 @@ width:50%
 }
 .code:active{
     box-shadow:0px 0px 7px , 0px 0px 7px cyan;
-    transform: scale(0.98)
+    transform: scale(0.64)
 }
 .code-div{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px,1fr);
-    gap:16px
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    gap:10px
 }
