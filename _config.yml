@@ -1,1 +1,2 @@
-permalink: /:title/
+# _config.yml
+markdown: kramdown
