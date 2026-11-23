@@ -20,7 +20,7 @@ body { font-size: 1rem;background-color:#002c45;
 @media (min-width: 768px) {
   body { font-size: 1.125rem;background-color:#002c45;
     color:black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segeo UI", Roboto, Helvetica, Arial, sans-serif;
       height:100%;
       width:100%
  }
