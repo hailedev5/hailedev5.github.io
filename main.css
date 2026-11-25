@@ -6,11 +6,7 @@
 /* Mobile base styles (default) */
 body { font-size: 1rem;background-color:#002c45;
     color:black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    -webkit-user-select:none;
-    -ms-user-select:none;
-     -moz-user-select:none;
-     user-select:none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segeo UI", Roboto, Helvetica, Arial, sans-serif;
     box-shadow: inset 0px 0px 24px cyan;
     height:100%;
     width:100%
@@ -24,6 +20,11 @@ body { font-size: 1rem;background-color:#002c45;
       height:100%;
       width:100%
  }
+}
+::selection{
+   background-color:linear-gradient(gold,cyan);
+color:white;
+font-weight:bold
 }
 nav {
     height:80px;
