@@ -24,7 +24,7 @@ body { font-size: 1rem;background-color:#002c45;
 ::selection{
    background-color:cyan;
 color:white;
-font-weight:bold
+border-radius:5px
 }
 nav {
     height:80px;
