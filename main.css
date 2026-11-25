@@ -22,7 +22,7 @@ body { font-size: 1rem;background-color:#002c45;
  }
 }
 ::selection{
-   background-color:linear-gradient(gold,cyan);
+   background-color:cyan;
 color:white;
 font-weight:bold
 }
